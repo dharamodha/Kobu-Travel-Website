@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body 
+{
+    overflow-x: hidden;
+}
+.main
+{
+    position: absolute;
+}
+
+nav
+{
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   background-color: white;
+   border-block-end: 1px solid black;
+}
+
+nav ul
+{
+list-style-type:none;
+background-color:white;
+
+}
+
+nav li
+{
+display:inline-block;
+float: left;
+border: 1px;
+background-color: white;
+}
+
+nav li a
+{
+display:inline-block;
+padding:25px 15px;
+color:black;
+text-align: center;
+text-decoration: none;
+margin-left: 10px ;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+nav li a:hover
+{
+background-color:white;
+color: darkgray;
+}
+
+nav li h1
+{
+    padding-left: 330px;
+    padding-top: 10px;
+}
+
+.heading2
+{
+    padding-top: 100px;
+    padding-left: 15px;
+    margin-left: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+
+.image
+{
+    padding-left: 15px;
+    padding-right: 10px;
+    margin: 15px;
+    text-align: center;
+    color: white;
+    
+}
+.image:hover
+{
+    padding-left: 15px;
+    padding-right: 10px;
+    margin: 15px;
+}
+
+.feature
+{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+
+.button
+{
+background-color: transparent;
+color: white;
+border: 1px solid white;
+border-radius: 30px;
+padding: 10px;
+}
+
+.button:hover
+{
+    
+background-color: rgba(222, 222, 222, 0.304);
+color: white;
+}
+
+.heading3
+{
+    padding-left: 15px;
+    margin: 15px;
+}
+
+.heading3:hover:not:sec
+{
+    padding-left: 15px;
+    margin: 15px;
+    color: darkgray;
+}
+
+.line
+    {
+    padding-top: 100px;
+    }
+
+    
+.hotels
+{
+    padding-left: 15px;
+    margin: 10px;
+    font-size: 50px;
+    
+}
+
+.para
+{
+    padding-left: 15px;
+    margin: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.row
+{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 30px;
+    padding-left: 20px;
+    gap: 20px;
+    overflow-x: hidden;
+    
+}  
+ 
+
+
+@media only screen and (max-width:1300px){
+    .row{
+        grid-template-columns: auto auto;}
+ }
+
+@media only screen and ( max-width:1100px){
+    .row{
+        grid-template-columns: auto;}
+ }
+
+.new
+{
+    top: -480px;
+    left: 30px; 
+    position: relative; 
+}
+
+.click
+{
+background-color: transparent;
+color: white;
+border: 1px solid white;
+border-radius: 100px;
+padding: 10px;
+}
+
+.click:hover
+{
+    
+background-color: rgba(222, 222, 222, 0.304);
+color: white;
+}
+
+.row h1
+{
+padding-top: -100px;
+}
+
+.villa
+{
+    padding-left: 25px;
+    margin: 10px;
+    font-size: 50px;
+}
+
+.villa h1
+{
+ font-size: 70px; 
+}
+
+.villaimg
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 25px;
+    padding-left: 25px;
+    gap: 10px;
+}
+
+.photo h1
+{
+    top: 0px;
+}
+
+.para1
+{
+    padding-left: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+.new1
+{
+    top: -780px;
+    left: 30px;
+    position: relative;
+}
+
+.click1
+{
+background-color: transparent;
+color: white;
+border: 1px solid white;
+border-radius: 100px;
+padding: 10px;
+}
+
+.click1:hover
+{
+    
+background-color: rgba(222, 222, 222, 0.304);
+color: white;
+}
+
+@media only screen and ( max-width:1100px){
+.villaimg{
+        grid-template-columns: auto;}
+ }
+ 
+.view
+{
+    padding: 40px;
+    position: relative;
+    font-size: 20px;
+}
+
+.heading4 h1
+{
+    font-size: 70px;
+    padding-left: 25px;
+    padding-top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.travel
+{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@media only screen and ( max-width:1100px){
+.travel{
+        grid-template-columns: auto;}
+ }
+
+
+.travel img
+{
+    padding-left: 55px;
+    padding-top: 100px;
+}
+
+.travel p
+{
+    padding-top: 160px;
+}
+
+.travel h1
+{
+padding-top: 30px;
+}
+
+.heading5
+{
+    padding-top: 70px;
+    text-align: center;
+}
+.journals
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@media only screen and ( max-width:1100px){
+.journals{
+        grid-template-columns: auto;}
+ }
+
+.section   
+{
+    padding-top: 100px;
+    padding-left: 25px;
+
+}
+
+.section h5
+{
+    padding-top: 20px;
+}
+
+.potrait img
+{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 15px;
+}
+
+.heading6
+{
+    padding-top: 85px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading6 h5
+{
+    padding-top: 30px;
+    padding-right: 500px;
+}
+
+footer
+{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   border-block-start: 1px solid black;
+  
+}
+
+footer ul
+{
+    list-style-type:none;
+    background-color:white;
+}
+
+footer li
+{
+    display:inline-block;
+    float: left;
+    border: 1px;
+    background-color: white;
+}
+
+footer li a
+{
+   display:inline-block;
+   padding:25px 15px;
+   color:black;
+   text-align: center;
+   text-decoration: none;
+   margin-left: 10px ;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer li a:hover
+{
+   background-color:white;
+   color: darkgray;
+}
+
+   </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="navbar">
+            <nav>
+            <ul>
+                <li class="active"><a href="#hotels">Hotels</a></li>
+                <li class="villas"><a href="#villas">Villas</a></li>
+                <li class="properties"><a href="#properties">Properties</a></li>
+                <li class="journal"><a href="#journal">Journal</a></li>
+                <li><h1 style="font-size: 35px;">KOBU</h1></li> 
+            </ul>
+        </nav>
+        </div>
+
+                 <div class="heading2">
+                    <h4>HAND-PICKED SPACES TO BOOK & TO BUY</h4 >
+                </div> 
+
+                <div class="image">
+                    <div class="img"><img src="https://kobu.co/wp-content/uploads/2022/05/OneOnly_Mandarina_Cover__.jpeg" height="800px" width="1500px" alt="" ></div>
+                    <div class="feature"><input type="button" name="FEATURED" class="button" value="FEATURED"> </div> 
+                </div>
+
+
+                <div class="heading3"> 
+                    <h2>One and Only Mandarina </h2>
+                    <div class="sec"><h4>Riviera Nayarit, Mexico</h4></div>
+                </div>
+
+                
+                <div class="line"><hr width="1920px" size="1px" color="black" ></div>
+
+                <div class="hotels">
+                    <h1>Hotels</h1> 
+                </div>
+
+               <div class="para"> <p>Design-conscious hotels grounded in luxury, craft and sustainability. These <br>hotels will elevate your experience of travel, whether you’re seeking a<br> recharging retreat, a creative escape or an adventure in nature.</p>
+               </div>
+
+            <div class="row"> 
+                <div class="img">
+                    <img src="https://kobu.co/wp-content/uploads/2023/08/hero-nico-sayulita-mexico-854x854.jpeg" alt="" height="500px" width="430px" style="border-radius: 30px;">
+                    <div class="new"><input type="button" name="new" class="click" value="NEW"> </div>
+                    <h1> NICO </h1>
+                    <h5> Sayulita, Mexico</h5>
+                </div>
+
+                <div class="img">
+                    <img src="https://kobu.co/wp-content/uploads/2023/08/terrace_morvedra_nou_menorca-630x624.jpg" alt="" height="500px" width="430px" style="border-radius: 30px;"> 
+                    <div class="new"><input type="button" name="new" class="click" value="NEW"> </div>
+                    <h1>Morvedra Nou </h1>
+                    <h5>Menorca, Spain</h5>
+                </div>
+                
+                <div class="img">
+                    <img src="https://kobu.co/wp-content/uploads/2023/07/lounge-parco-dei-sesi-630x624.jpeg" height="500px" width="430px" style="border-radius: 30px;"> 
+                    <div class="new"><input type="button" name="new" class="click" value="NEW"> </div>
+                    <h1>Parco Dei Sesi </h1>
+                    <h5>Pantelleria, Italy</h5>
+                </div>
+            
+            </div>
+
+            <div class="line"><hr width="1920px" size="1px" color="black" ></div>
+
+
+        <div class="villa">
+            <h1>Villas</h1>
+            <div class="para1"><p>These beautifully designed villas and apartments were chosen for those <br> looking for distinct getaways in some of the world’s most coveted <br>locations.
+            </p></div>
+        </div> 
+
+            <div class="villaimg">
+                <div class="photo">
+                <img src="https://kobu.co/wp-content/uploads/2023/08/living-hero-casa-quatro-faro-portugal-1296x1300.jpeg" alt="" height="800px" width="700px" style="border-radius: 30px;">
+                    <div class="new1"><input type="button" name="new" class="click1" value="NEW"> </div>
+                    <h1>Casa Quatro </h1>
+                    <h5> Faro, Portugal</h5>
+                </div>
+            
+                <div class="photo">
+                <img src="https://kobu.co/wp-content/uploads/2023/07/terrace-view-can-lluisso-mallorca-2.jpg" alt="" height="800px" width="700px" style="border-radius: 30px;">
+                    <div class="new1"><input type="button" name="new" class="click1" value="NEW"></div>
+                    <h1>Can Lluïssó </h1>
+                    <h5>Mallorca, Spain</h5>
+                </div>
+            </div>
+
+        
+
+           <div class="view" style="float: right;"><h1>View All Villas</h1></div> 
+
+           <div class="line"><hr width="1920px" size="1px" color="black" ></div>
+
+           <div class="heading4">
+             <h1 style="color: gray;">Where we’re traveling</h1>
+             <h1 style="padding-top: 5px;"> Mediterranean</h1>
+           </div>
+
+           <div class="travel">
+            <div>
+                <img src="https://kobu.co/wp-content/uploads/2022/05/K-studio_Dexamenes-0149-1-1078x1100.jpeg" alt="" height="700px" width="700px">
+            </div>
+
+            <div>
+                <p>
+                    With its sun-baked summers and rolling coastlines, the Mediterranean <br>consists of countries including Spain, Portugal, Italy, Greece, Croatia,<br> Slovenia, and Malta. United by their warm climate, culture and location<br> bordering the Mediterranean Sea, these destinations have myriads of<br> magical experiences to offer.
+                </p>
+                <h1>Explore</h1>
+            </div>
+
+           </div>
+
+           <div class="line"><hr width="1920px" size="1px" color="black" ></div>
+
+           <h3 class="heading5">Journal</h3>
+           <div class="journals">
+            <div class="section">
+                <img src="https://kobu.co/wp-content/uploads/2020/09/10-852x999.jpeg" alt="" height="700px" width="700px" style="border-radius: 30px;">
+                <h1>Canoneta Townhouse</h1>
+                <h5>Kobu sat down for a virtual chat with forward-thinking property <br> developers Berrow Projects,…</h5>
+                </div>
+
+                <div class="section">
+                <img src="https://kobu.co/wp-content/uploads/2022/07/SKO-MSL-FINI-001_Facade-2-852x1020.jpg " alt="" height="700px" width="700px" style="border-radius: 30px;">
+                <h1>Musée Yves Saint Laurent Marrakech</h1>
+                <h5>A visit to Marrakech is incomplete without a stop at the Musée <br>Yves Saint Laurent. The…</h5>
+            </div>
+           </div>
+
+           <div class="line"><hr width="1920px" size="1px" color="black" ></div>
+
+           <div class="potrait">
+            <img src="https://kobu.co/wp-content/uploads/2020/10/Falcon-House-1707x1360.jpg" alt="" height="800px" width="1450px" style="padding-top: 85px; ">
+            <h1 style="padding-left: 35px;">Koto Cabins</h1>
+            <h4 style="padding-left: 35px; padding-top: 10px;">We spoke with the founders of Koto Cabins, Johnathon, Zoe and Theo. Koto design, build…</h4>
+           </div>
+
+           <div class="line"><hr width="1920px" size="1px" color="black" ></div>
+
+           <div class="heading6" style="padding: 130px;">
+           <h2> “This is not your standard hotel and real estate platform: <br> &nbsp;&nbsp;&nbsp;&nbsp;the curation is highly focused on design and the scene is a clever <br> marketplace that allows users to replicate the design at home.”</h2>
+           <h5>Boutiquologie - Former Mr and Mrs Smith Curators</h5>   
+        </div>
+
+        <footer>
+            <ul>
+                <li class="privacy"><a href="#privacy">PRIVACY</a></li>
+                <li class="disclosure"><a href="#disclosure">DISCLOSURE</a></li>
+                <li class="cookies"><a href="#cookies">COOKIES</a></li>
+            </ul>
+        </footer>
+    </div>
+      
+    
+</body>
+</html>
